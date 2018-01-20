@@ -21,6 +21,10 @@ body {
   letter-spacing: 1px;
   transition: all 0.35s ease;
   background-color: rgba(129, 168, 208, 0.4);
+  border-bottom-style: groove;
+  border-bottom-width: 0.5px;
+  border-bottom-color: #2b4c93;
+
 }
 
 .menu-hover-lines li a {
@@ -82,7 +86,7 @@ body {
   border-style: groove;
   border-width: 0.5px;
   border-color: #2b4c93;
-  background-color: rgba(129, 168, 208, 0.80);
+  background-color: rgba(129, 168, 208, 0.2);
   background-size: cover;
   width: 100vw; 
   text-align: left;
@@ -95,6 +99,8 @@ body {
   -webkit-justify-content: left;
       -ms-flex-pack: left;
           justify-content: left;
+  background-image: url("../media/border.png");
+  background-size: cover;
 }
 
 .button{
@@ -116,9 +122,10 @@ body {
     padding: 100px 60px 60px 60px;
 }
 
-#intro{
+#homepage-intro{
     padding: 130px 60px 60px 60px;
 }
+
 .marketing-site-hero-content h1 {
   font-size: 32px;
 }
@@ -134,7 +141,7 @@ body {
   color: #3a3939;
 }
 
-/*services*/
+/*services formatting*/
 
 .flip-card {
   -webkit-perspective: 1000;
@@ -176,17 +183,17 @@ body {
 
 #box-a {
   background: url("../media/glass 1.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #box-b {
   background: url("../media/glass 1.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 #box-c {
   background: url("../media/glass 1.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .flip-card-inner-front {
@@ -233,6 +240,10 @@ body {
   padding: 1rem;
 }
 
+.flip-card-inner-back p {
+  line-height: 1;
+}
+
 .flip-card-inner-back-title {
   font-weight: bold;
 }
@@ -263,4 +274,22 @@ body {
   padding-bottom: 10px;
   font-weight: bold;
   border-radius: 25px;
+}
+
+#services-desktop{
+  margin: auto;
+  width: 85%;
+}
+
+.services{
+  width: 100%;
+  flex: 0 50%;
+}
+
+#services-graphic{
+    padding: 100px 60px 0px 60px;
+}
+
+#services-intro{
+    padding: 130px 60px 0px 60px;
 }

@@ -1,4 +1,5 @@
 
-$('menu.menu-hover-lines').on('click', function(){
-   $(this).addClass('active').siblings().removeClass('active');
+$('li').on( 'click', function(e){
+  $('li.active').removeClass('active');
+  $(this).addClass('active');
 });

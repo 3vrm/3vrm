@@ -5,7 +5,31 @@
 
 
 {% block content %}
-<p class="subheader" id="services-header">The inventory of services we offer is based on our Inventory of Third Party and Vendor Risks™ and leverages our Third Party and Vendor Risk Framework™.</p>
+<div class="desktop-visible">	
+	<ul class="menu menu-hover-lines">
+		<li><a href="{% url "homepage" %}">Home</a></li>
+		<li><a href="{% url "about" %}">About 3VRM</a></li>
+		<li><a href="{% url "approach" %}">3VRM Approach</a></li>
+		<li class="active"><a href="{% url "services" %}">3VRM Services</a></li>
+		<li><a href="{% url "news" %}">3VRM News</a></li>
+		<li><a href="{% url "team" %}">3VRM Team</a></li>
+		<li><a href="{% url "contactUs" %}">Contact Us</a></li>
+	</ul>
+</div>
+<div class="container">
+		<div class="services" id="services-graphic">
+			<img src="{% static "media/services graphic.png" %}">
+	</div>
+	<div class="services" id="services-intro">
+		<div class="marketing-site-hero-content">
+			<h1>Our Services</h1>
+			<p class="subheader">The inventory of services we offer is based on our Inventory of Third Party and Vendor Risks™ and leverages our Third Party and Vendor Risk Framework™.</p>
+			<a href="{% url "contactUs" %}" class="round button">contact us</a>
+		</div>
+	</div>
+</div>
+>
+<div id="services-desktop">
 <div class="grid-x grid-padding-x">
 	<div class="cell small-12 flex-container flex-dir-column large-flex-dir-row">
 		<div class="callout primary flex-child-auto">
@@ -70,5 +94,6 @@
 		</div>
     </div>
   </div>
+</div>
 </div>
 {% endblock %}
