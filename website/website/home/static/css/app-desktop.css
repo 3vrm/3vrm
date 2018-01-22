@@ -88,7 +88,6 @@ body {
   border-color: #2b4c93;
   background-color: rgba(129, 168, 208, 0.2);
   background-size: cover;
-  width: 100vw; 
   text-align: left;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -266,16 +265,6 @@ body {
   border: none;
 }
 
-#services-header {
-  margin: 20px;
-  border:1px solid black;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-weight: bold;
-  border-radius: 25px;
-}
-
 #services-desktop{
   margin: auto;
   width: 85%;
@@ -292,4 +281,33 @@ body {
 
 #services-intro{
     padding: 130px 60px 0px 60px;
+}
+
+
+/*about page formatting*/
+
+#about-info{
+  margin: auto;
+  width: 85%;
+}
+
+.about{
+  width: 100%;
+  flex: 0 50%;
+}
+
+#about-graphic-1{
+    padding: 100px 60px 20px 60px;
+}
+
+#about-graphic-2{
+    padding: 40px 40px 40px 40px;
+}
+
+#about-intro{
+    padding: 130px 60px 20px 60px;
+}
+
+#about-list-graphic{
+    padding: 20px 60px 60px 60px;
 }
